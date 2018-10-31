@@ -1,0 +1,2 @@
+# javascript_multiple_inheritance
+multiple inheritance using Proxies
