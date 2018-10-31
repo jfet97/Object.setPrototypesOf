@@ -34,23 +34,23 @@ baseObj3.prop3; // 'value3'
 ```
 
 ## getters
-**this** into getters will be **obj**
+**this** into getters will point to **obj** if a getter was invoked by **obj** itself
 ```js
 aBaseObj; // {get foo() { return this.bar }, bar: 42}
-ob; // {bar:'baz'}
+obj; // {bar:'baz'}
 
 obj.foo; // 'baz'
 ```
 
 ## setters
-**this** into setters will be **obj**
+**this** into setters will point to **obj** if a setter was invoked by **obj** itself
 ```js
 aBaseObj; // {set foo(value) { this.bar = value }, bar: 42}
 ob; // {}
 
 obj.foo = 'baz';
-obj; {bar: 'baz'}
+obj; // {bar: 'baz'}
 
 // WARNING
-aBaseObj; {bar: 42}
+aBaseObj; // {bar: 42}
 ```
