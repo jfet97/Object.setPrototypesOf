@@ -1,6 +1,11 @@
 # Object.setPrototypesOf
 multiple inheritance using Proxies
 
+## what
+```js
+Object.setPrototypesOf(target, prototype1, prototype2, ...;
+```
+
 ## how
 ```js
 const obj = {};
@@ -54,3 +59,8 @@ obj; // {bar: 'baz'}
 // WARNING
 aBaseObj; // {bar: 42}
 ```
+
+## invariants
+* **target** must be an object
+* minimum number of required prototypes: **2** (otherwise use **Object.setPrototypeOf**)
+* all prototypes must be **object**, a **null** value is not accepted
