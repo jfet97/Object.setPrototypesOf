@@ -62,6 +62,6 @@ aBaseObj; // {bar: 42}
 ```
 
 ## invariants
-* **target** must be an object
+* **target** must be an object, a null value is not accepted
 * minimum number of required prototypes: **2** (otherwise use **Object.setPrototypeOf**)
-* all prototypes must be **object**, a **null** value is not accepted
+* all prototypes must be **object**, a null value is not accepted
