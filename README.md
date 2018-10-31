@@ -46,7 +46,7 @@ obj.foo; // 'baz'
 **this** into setters will point to **obj** if a setter was invoked by **obj** itself
 ```js
 aBaseObj; // {set foo(value) { this.bar = value }, bar: 42}
-ob; // {}
+obj; // {}
 
 obj.foo = 'baz';
 obj; // {bar: 'baz'}
