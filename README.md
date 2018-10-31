@@ -1,6 +1,11 @@
 # Object.setPrototypesOf
 multiple inheritance using Proxies
 
+## where
+```
+https://cdn.jsdelivr.net/npm/setprototypesof@1.0.1/setPrototypesOf.min.js
+```
+
 ## what
 Set multiple [[Prototype]] linkages
 ```js
