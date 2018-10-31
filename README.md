@@ -30,5 +30,27 @@ obj; // {prop: 'new value', prop2: 'new value2', prop3: 'new value3'}
 // WARNING
 baseObj1.prop; // 'value'
 baseObj2.prop2; // 'value2'
-baseObj3.prop3; '// value3'
+baseObj3.prop3; // 'value3'
+```
+
+## getters
+**this** into getters will be **obj**
+```js
+aBaseObj; // {get foo() { return this.bar }, bar: 42}
+ob; // {bar:'baz'}
+
+obj.foo; // 'baz'
+```
+
+## setters
+**this** into setters will be **obj**
+```js
+aBaseObj; // {set foo(value) { this.bar = value }, bar: 42}
+ob; // {}
+
+obj.foo = 'baz';
+obj; {bar: 'baz'}
+
+// WARNING
+aBaseObj; {bar: 42}
 ```
