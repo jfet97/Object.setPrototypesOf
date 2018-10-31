@@ -2,8 +2,9 @@
 multiple inheritance using Proxies
 
 ## what
+Set multiple [[Prototype]] linkages
 ```js
-Object.setPrototypesOf(target, prototype1, prototype2, ...;
+Object.setPrototypesOf(target, prototype1, prototype2, ...);
 ```
 
 ## how
