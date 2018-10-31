@@ -1,2 +1,2 @@
-# javascript_multiple_inheritance
+# Object.setPrototypesOf
 multiple inheritance using Proxies
