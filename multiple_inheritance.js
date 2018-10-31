@@ -20,7 +20,7 @@ if(!Object.setPrototypesOf) {
             throw new TypeError("use Object.setPrototypeOf instead");
         }
 
-        if(prototypes.find(prototype => typeof prototype != "object" || !prototype)) {
+        if(prototypes.find(prototype => typeof prototype != "object" && !prototype)) {
             throw new TypeError("a prototype is not an object");
         }
 
