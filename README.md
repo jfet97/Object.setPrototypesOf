@@ -1,7 +1,7 @@
 # Object.setPrototypesOf
 multiple inheritance using Proxies
 
-# how
+## how
 ```js
 const obj = {};
 
